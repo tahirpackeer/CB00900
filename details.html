@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Details Page</title>
+    <link rel="stylesheet" href="CSS-details.css" />
+    <link rel="stylesheet" href="international-telephone-input.css" />
+  </head>
+  <body>
+    <!----Navigation bar with burger nav bar-->
+    <nav>
+      <h1 class="main-heading">Details</h1>
+
+      <label for="check">
+        <div class="checkbtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"
+            />
+          </svg>
+        </div>
+      </label>
+      <a href="index.html">
+        <img
+          class="image1"
+          src="images/logo1.JPG"
+          alt="webpage logo"
+          width="80"
+          height="80"
+        />
+      </a>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tickets.html">Tickets</a></li>
+        <li><a class="active" href="details.html">Details</a></li>
+        <li><a href="payment.html">Payment page</a></li>
+        <li><a href="confirmation.html">Payment confirmation</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper2">
+      <form method="POST" id="detailsForm">
+        <h4>Enter your details:</h4>
+        <br />
+        <div id="fName">
+          <label for="Name">Full Name: </label><br><br>
+          <input type="text" id="Name" name="name" />
+          <br /><br>
+    
+          <label for="telephone">Mobile Number: </label>
+          <style>
+            
+            .iti {
+                position: relative;
+                display: inline-block;
+            }
+            
+            input[type=tel] {
+                padding-right: 6px;
+                padding-left: 52px;
+                margin-left: 0;
+
+                position: relative;
+                z-index: 0;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                margin-right: 0;
+                border: 1px solid #CCC;
+                width: 270px;
+                height: 35px;
+                /* padding: 6px 12px; */
+                border-radius: 2px;
+                font-family: inherit;
+                font-size: 100%;
+                color: inherit;
+            }
+            
+          </style>
+          <div class="tel">
+            <input type="tel" name="phone" required/>
+          </div>
+          <br>
+    
+          <div>
+            <label for="Email">Email: </label><br><br>
+            <input type="email" name="email" id="email" required/>
+          </div>
+          <br />
+    
+          <label for="confirmEmail">Confirm Email: </label><br><br>
+          <input type="text" name="confirmEmail" id="confirmEmail" required /><br><br>
+    
+          <div class="input-box1">
+            <div class="duration">
+              <label for="Gender">Gender: </label><br><br>
+              <select id="genderSelect">
+                <option value="">Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <div id="summaryTableContainer">
+      <!-- Summary table will be generated here -->
+    </div>
+
+    <div >
+      <div >
+         <a href="/payment.html" class="payment-link">Continue with purchase</a>
+      </div>
+    </div><br><br>
+
+    <script src="international-telephone-input.js"></script>
+    <script src="javascript2.js"></script>
+  </body>
+</html>
